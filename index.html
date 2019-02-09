@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ASR Calc</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <h3>Anaerobic speed reserve (ASR) calculator</h3>
+  
+  <form action="javascript:calculateForm()">
+    <span style="grid-area: n1; justify-self: end">Short fly-in:</span>
+    <input id="dist1" type="number" min="0" step="any"
+      style="grid-area: d1" placeholder="Distance (m)" required>
+    <input id="time1" type="number" min="0" step="any"
+      style="grid-area: t1" placeholder="Time (s)" required>
+
+    <span style="grid-area: n2; justify-self: end">Long fly-in:</span>
+    <input id="dist2" type="number" min="0" step="any"
+      style="grid-area: d2" placeholder="Distance (m)" required>
+    <input id="time2" type="number" min="0" step="any"
+      style="grid-area: t2" placeholder="Time (s)" required>
+    
+    <input style="grid-area: btn" name="Submit" type="submit" value="Calculate"/>
+  </form>
+   
+  <div id="report">
+    <div id="playerProfile">
+
+    </div>
+    
+    <table id="workoutSheet">
+      <thead>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
