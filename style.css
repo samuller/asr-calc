@@ -19,6 +19,15 @@ form {
     ".  .  btn";
 }
 
+#playerSpeedProfile {
+  display: grid;
+
+  grid-template-areas: 
+  ". lbl1 val1"
+  ". lbl2 val2"
+  ". lbl3 val3";
+}
+
 table {
   width: 100%;
 }

@@ -35,14 +35,14 @@ function addPlayerProfile(speedProfile) {
   var spd_an_res = parseFloat(speedProfile['spd_an_res']).toFixed(2);
   document.querySelector("#playerProfile").innerHTML =
     `<div><b>Speed profile</b></div>
-     <div class="indent">
-      <span>Aerobic max. speed:</span>
-      <span>${spd_aer}m/s</span>
-     </div>
-     <div class="indent">
-      <span>Anaerobic max. speed:</span>
-      <span>${spd_an}m/s (+${spd_an_res}m/s)</span>
-     </div>`;
+    <div id="playerSpeedProfile">
+      <span style="grid-area: lbl1">Aerobic max. speed:</span>
+      <span style="grid-area: val1">${spd_aer}m/s</span>
+      <span style="grid-area: lbl2">Anaerobic speed reserve:</span>
+      <span style="grid-area: val2">${spd_an_res}m/s</span>
+      <span style="grid-area: lbl3">Total max.:</span>
+      <span style="grid-area: val3">${spd_an}m/s</span>
+    </div>`;
 }
 
 function clearRows() {
