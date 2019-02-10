@@ -7,6 +7,10 @@ input {
   width: 100%;
 }
 
+#page {
+  width: 100%;
+}
+
 form {
   width: 100%;
   display: grid;
@@ -46,10 +50,7 @@ tr:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  form {
-    width: 50%;
-  }
-  table {
+  #page {
     width: 50%;
   }
 }
